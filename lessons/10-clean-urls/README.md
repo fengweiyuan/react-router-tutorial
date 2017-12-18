@@ -1,5 +1,7 @@
 # Clean URLs with Browser History
 
+> fwy:干净整洁的url，没有了那堆hash垃圾
+
 The URLs in our app right now are built on a hack: the hash. It's the
 default because it will always work, but there's a better way.
 
@@ -45,6 +47,8 @@ The Webpack Dev Server has an option to enable this. Open up
 ```json
     "start": "webpack-dev-server --inline --content-base . --history-api-fallback"
 ```
+
+> fwy: javascript能够管理你的url，但加载app前，你发出的深入的url，后天服务器也需要能够识别
 
 We also need to change our relative paths to absolute paths in
 `index.html` since the URLs will be at deep paths and the app, if it
