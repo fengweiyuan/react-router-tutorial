@@ -1,8 +1,12 @@
 # Index Routes
 
+> fwy: 主页路由
+
 When we visit `/` in this app it's just our navigation and a blank page.
 We'd like to render a `Home` component there. Lets create a `Home`
 component and then talk about how to render it at `/`.
+
+> fwy:之前都是只有导航栏，我们在访问根路径'/'时，应该加上主页来展示
 
 ```js
 // modules/Home.js
